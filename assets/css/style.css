@@ -8,7 +8,6 @@ body {
     font-size: 0.9375rem;
     font-weight: normal;
     line-height: 1.4em;
-    height: 100vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -89,9 +88,7 @@ strong {
 /* ============================= */
 /*             MAIN             */
 /* ============================= */
-main {
-    min-height: 500px;
-}
+
 
 /* ============================= */
 /*            FOOTER             */
