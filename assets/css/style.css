@@ -1,10 +1,20 @@
 /* ============================= */
+/*           VARIABLES           */
+:root {
+    --moradoClaro: #f2caf3;
+    --moradoOscuro: #c156ff;
+    --colorDeTexto: #ffffff;
+}
+
+/* ============================= */
+
+/* ============================= */
 /*       ESTILOS GENERALES       */
 /* ============================= */
 body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: "HelveticaNeue","Helvetica Neue",helvetica,Arial,sans-serif;
+    background-color: var(--moradoClaro);
+    color: var(--colorDeTexto);
+    font-family: "HelveticaNeue", "Helvetica Neue", helvetica, Arial, sans-serif;
     font-size: 0.9375rem;
     font-weight: normal;
     line-height: 1.4em;
@@ -22,9 +32,10 @@ nav img {
     width: 106px;
 }
 
-h1, .h1 {
-    color: #f7971e;
-    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+h1,
+.h1 {
+    color: var(--moradoOscuro);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2.25rem;
     font-weight: 200;
     line-height: 1.02778em;
@@ -33,7 +44,7 @@ h1, .h1 {
 }
 
 h2 {
-    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     width: 100%;
     font-size: 21px;
@@ -41,19 +52,51 @@ h2 {
 
 
 
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
     border-radius: 3px;
-    color: #888888;
+    color: var(--colorDeTexto);
     display: inline-block;
     font-size: 15px;
-   
-    
+
+
     margin-bottom: 9px;
     padding: 4px 6px;
 }
 
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
     background-color: #ffffff;
+    color:black;
     border: 1px solid #cccccc;
     box-shadow: 0px 1px 1px rgb(0 0 0 / 8%) inset;
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
@@ -61,8 +104,14 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 
 
-input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
-    background-color: #f7971e;
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+    background-color: var(--moradoOscuro);
+    color: var(--colorDeTexto);
     cursor: default;
 }
 
@@ -79,7 +128,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 }
 
 strong {
-    color: #f7971e;
+    color: var(--moradoOscuro);
 }
 
 
