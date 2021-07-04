@@ -5,11 +5,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Paypal</title>
+    <title>Calculadora de Comisiones Paypal</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.jpg">
+    <!-- BOOSTRAP CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="border-bottom navbar navbar-expand-lg p-0 align-items-center justify-content-center"></nav>
+    <!-- Contenido principal -->
+    <main class="container text-center my-4 p-y-3">
+        <!-- Cabecera de la web -->
+        <header>
+            <h1 class="h1">
+                Calculadora de comisiones Paypal
+            </h1>
+        </header>
+        <!-- Formularios -->
+        <section class="d-flex justify-content-center flex-column align-items-center">
+            <!-- Formulario Comisiones -->
+            <form id="comisiones-paypal" class="col-5 mt-3">
+                <h2>Las Comisiones PayPal</h2>
+                <div class="row">
 
+                    <div class="form-group col row align-items-center">
+                        <input type="number" name="porcentaje" id="porcentaje" value="5.4"
+                            class="form-control col input2">
+                        <label for="porcentaje" class="col">% más</label>
+                    </div>
+                    <div class="form-group col row align-items-center">
+                        <input type="number" name="agregado" id="agregado" value="0.30" class="form-control col input2">
+                        <label for="agregado" class="col">USDs</label>
+                    </div>
+                </div>
+            </form>
+            <!-- Formulario Recibir -->
+            <form id="calculadora-para-recibir" class="mt-3">
+                <h2>Calculadora PayPal para Recibir</h2>
+
+                <table >
+                    <tr >
+                        <td><label for="recibir"><strong>Para recibir:</strong>&nbsp;</label></td>
+                        <td><input type="number" class="input" name="recibir" id="recibir"></td>
+                        <td>&nbsp;USDs</td>
+                    </tr>
+                    <tr>
+                        <td><label for="total-enviar">Hay que Enviar:&nbsp;</label></td>
+                        <td><input type="text" class="input" id="total-enviar" disabled></td>
+                        <td>&nbsp;USDs</td>
+                    </tr>
+                    <tr>
+                        <td><label for="enviar-comision">La Comision es de:&nbsp;</label></td>
+                        <td><input type="text" class="input" id="enviar-comision" disabled></td>
+                        <td>&nbsp;USDs</td>
+                    </tr>
+                </table>
+            </form>
+            <!-- Formulario Para Enviar -->
+            <form id="calculadora-para-enviar" class="mt-3">
+                <h2>Calculadora PayPal para Enviar</h2>
+
+                <table >
+                    <tr >
+                        <td><label for="recibir"><strong>Si se Envian:&nbsp;</strong></label></td>
+                        <td><input type="number" class="input" name="recibir" id="recibir"></td>
+                        <td>&nbsp;USDs</td>
+                    </tr>
+                    <tr>
+                        <td><label for="total-enviar">La Comision es de:&nbsp;</label></td>
+                        <td><input type="text" class="input" id="total-enviar" disabled></td>
+                        <td>&nbsp;USDs</td>
+                    </tr>
+                    <tr>
+                        <td><label for="enviar-comision">Se reciben:&nbsp;</label></td>
+                        <td><input type="text" class="input" id="enviar-comision" disabled></td>
+                        <td>&nbsp;USDs</td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-top text-center d-flex flex-column align-items-center justify-content-center" id="footer">
+        <div>
+
+            Elaborado por <strong>Juan Diego Hernández</strong> &copy; 2021
+        </div>
+    </footer>
+    <!-- BOOSTRAP JavaScript -->
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
