@@ -1,3 +1,6 @@
+/* ============================= */
+/*       ESTILOS GENERALES       */
+/* ============================= */
 body {
     background-color: #000000;
     color: #ffffff;
@@ -5,6 +8,11 @@ body {
     font-size: 0.9375rem;
     font-weight: normal;
     line-height: 1.4em;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -29,7 +37,7 @@ h2 {
     font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: normal;
     width: 100%;
-    font-size: 26px;
+    font-size: 21px;
 }
 
 
@@ -75,7 +83,21 @@ strong {
     color: #f7971e;
 }
 
+
+
+
+/* ============================= */
+/*             MAIN             */
+/* ============================= */
+main {
+    min-height: 500px;
+}
+
+/* ============================= */
+/*            FOOTER             */
+/* ============================= */
+
 #footer {
     height: 80px;
-    
+    width: 100%;
 }
