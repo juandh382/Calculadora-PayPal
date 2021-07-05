@@ -9,7 +9,7 @@ class UI {
                 if (input.getAttribute('data-info') === 'comision') {
                     input.value = String(comision).substr(0, 8);
                 } else {
-                    input.value = String(monto);
+                    input.value = String(monto).substr(0, 8);
                 }
             }
         })
