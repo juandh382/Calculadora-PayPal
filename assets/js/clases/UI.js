@@ -7,9 +7,9 @@ class UI {
             const ACCION = input.getAttribute('data-accion');
             if (ACCION === accion) {
                 if (input.getAttribute('data-info') === 'comision') {
-                    input.value = String(comision).substr(0,8);
+                    input.value = String(comision).substr(0, 8);
                 } else {
-                    input.value = String(monto).substr(0,8);
+                    input.value = String(monto);
                 }
             }
         })

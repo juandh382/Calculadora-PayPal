@@ -1,3 +1,5 @@
+import { roundToTwo } from '../helpers/funciones.js';
+
 class Calculadora {
 
     constructor() {
@@ -18,12 +20,10 @@ class Calculadora {
 
     setPorcentaje(porcentaje) {
         this.porcentaje = porcentaje;
-        console.log(porcentaje)
     }
 
     setAgregado(agregado) {
         this.agregado = agregado;
-        console.log(agregado)
     }
 
     // getters
@@ -48,15 +48,14 @@ class Calculadora {
                 PORCENTAJE = this.getPorcentaje(),
                 AGREGADO = this.getAgregado();
 
-            console.log(PORCENTAJE, AGREGADO)
             let total = 0;
             switch (this.accion) {
                 case 'recibir':
-                    total = (monto * PORCENTAJE / 100) + AGREGADO + monto;
+                    total = roundToTwo((monto * PORCENTAJE / 100) + AGREGADO + monto);
                     this.setComision(monto, total);
                     break;
                 case 'enviar':
-                    total = (monto - AGREGADO) / (1 + PORCENTAJE / 100);
+                    total = roundToTwo((monto - AGREGADO) / (1 + PORCENTAJE / 100));
                     this.setComision(total, monto);
                     break;
             
