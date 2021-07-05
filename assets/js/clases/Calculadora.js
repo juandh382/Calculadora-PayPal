@@ -1,30 +1,62 @@
 class Calculadora {
 
-    constructor(accion = 'enviar') {
-        this.accion = accion;
+    constructor() {
+        this.accion = 'enviar';
         this.comision = 0;
+        this.porcentaje = 5.4;
+        this.agregado = 0.30;
+
+    }
+    // Setters
+    setAccion(accion) {
+        this.accion = accion;
     }
 
-    // Calcula el monto total a recibir o enviar 
     setComision(enviar = 0, recibir = 0) {
         this.comision = recibir - enviar;
     }
 
+    setPorcentaje(porcentaje) {
+        this.porcentaje = porcentaje;
+        console.log(porcentaje)
+    }
+
+    setAgregado(agregado) {
+        this.agregado = agregado;
+        console.log(agregado)
+    }
+
+    // getters
     getComision() {
         return this.comision;
     }
 
+    getPorcentaje() {
+        return this.porcentaje;
+    }
+
+    getAgregado() {
+        return this.agregado;
+    }
+    
+    // Calcula el monto total a recibir o enviar 
     calcularTotal(monto = 0) {
+        
         if (!isNaN(monto)) {
 
+            const 
+                PORCENTAJE = this.getPorcentaje(),
+                AGREGADO = this.getAgregado();
+
+            console.log(PORCENTAJE, AGREGADO)
             let total = 0;
             switch (this.accion) {
                 case 'recibir':
-                    total = (monto * 5.4 / 100) + 0.30 + monto;
+                    total = (monto * PORCENTAJE / 100) + AGREGADO + monto;
                     this.setComision(monto, total);
                     break;
                 case 'enviar':
-                    total = (monto - 0.30) / (1 + 5.4 / 100);
+                    total = (monto - AGREGADO) / (1 + PORCENTAJE / 100);
                     this.setComision(total, monto);
                     break;
             

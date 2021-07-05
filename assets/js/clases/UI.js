@@ -1,9 +1,9 @@
-import { INPUT_INFO } from '../selectores.js';
+import { INPUTS_INFO } from '../selectores.js';
 
 class UI {
     mostrarResultado(monto = 0, comision = 0, accion) {
         
-        INPUT_INFO.forEach(input => {
+        INPUTS_INFO.forEach(input => {
             const ACCION = input.getAttribute('data-accion');
             if (ACCION === accion) {
                 if (input.getAttribute('data-info') === 'comision') {

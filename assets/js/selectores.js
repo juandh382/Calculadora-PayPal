@@ -1,10 +1,14 @@
 const 
     INPUTS_COMISIONES = document.querySelectorAll('#comisiones-paypal input[type="number"]'),
     INPUTS = document.querySelectorAll('#calculadoras input[type="number"]'),
-    INPUT_INFO = document.querySelectorAll('input[type="text"]');
+    INPUTS_INFO = document.querySelectorAll('input[type="text"]'),
+    INPUT_PORCENTAJE = document.querySelector('#porcentaje'),
+    INPUT_AGREGADO = document.querySelector('#agregado');
 
 export {
     INPUTS_COMISIONES,
     INPUTS,
-    INPUT_INFO
+    INPUTS_INFO,
+    INPUT_PORCENTAJE,
+    INPUT_AGREGADO
 }
